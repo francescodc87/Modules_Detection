@@ -1,0 +1,131 @@
+PF00109	2739	Beta-ketoacyl synthase, N-terminal domain	PKS	x	PKS
+PF02801	2733	Beta-ketoacyl synthase, C-terminal domain	PKS	x	PKS
+PF08659	1698	KR domain	PKS	x	PKS
+PF00378	1476	Enoyl-CoA hydratase/isomerase family	PKS		PKS
+PF08541	910	3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III C terminal	PKS		PKS
+PF08545	823	3-Oxoacyl-[acyl-carrier-protein (ACP)] synthase III	PKS		PKS
+PF02803	384	Thiolase, C-terminal domain	PKS		PKS
+PF00108	377	Thiolase, N-terminal domain	PKS		PKS
+PF02706	368	Chain length determinant protein	PKS	x	PKS
+PF08990	276	Erythronolide synthase docking	PKS		PKS
+PF02797	137	Chalcone and stilbene synthases, C-terminal domain	PKS	x	PKS
+PF00195	93	Chalcone and stilbene synthases, N-terminal domain	PKS	x	PKS
+PF07366	87	SnoaL-like polyketide cyclase	PKS		PKS
+PF00501	5138	AMP-binding enzyme	NRPS	x
+PF00668	2465	Condensation domain	NRPS	x
+PF08415	247	Nonribosomal peptide synthase	NRPS	x
+PF00432	192	Prenyltransferase and squalene oxidase repeat	Terpene	x
+PF00494	128	Squalene/phytoene synthase	Terpene	x
+PF03936	2	Terpene synthase family, metal binding domain	Terpene	x
+PF01397		Terpene synthase, N-terminal domain	Terpene	x
+PF00432		Prenyltransferase and squalene oxidase repeat	Terpene	x
+PF04275		Phosphomevalonate kinase	Terpene	x
+PF00348		Polyprenyl synthetase	Terpene	x
+PF11991	Tryptophan dimethylallyltransferase	Terpene	x
+PF05834	Lycopene cyclase protein	Terpene	x
+PF06330	Trichodiene synthase (TRI5)	Terpene	x
+PF00534	2371	Glycosyl transferases group 1	Oligosaccharide	x
+PF00535	2151	Glycosyl transferase family 2	Oligosaccharide	x
+PF02922	932	Carbohydrate-binding module 48 (Isoamylase N-terminal domain)	Oligosaccharide	x
+PF01041	905	DegT/DnrJ/EryC1/StrS aminotransferase family	Oligosaccharide	x
+PF00908	467	dTDP-4-dehydrorhamnose 3,5-epimerase	Oligosaccharide	x
+PF02719	430	Polysaccharide biosynthesis protein	Oligosaccharide	x
+PF04321	417	RmlD substrate binding domain	Oligosaccharide	x
+PF01943	398	Polysaccharide biosynthesis protein	Oligosaccharide	x
+PF02350	363	UDP-N-acetylglucosamine 2-epimerase	Oligosaccharide	x
+PF02397	318	Bacterial sugar transferase	Oligosaccharide	x
+PF04932	241	O-Antigen ligase	Oligosaccharide	x
+PF01075	218	Glycosyltransferase family 9 (heptosyltransferase)	Oligosaccharide	x
+PF00953	211	Glycosyl transferase family 4	Oligosaccharide	x
+PF01050	208	Mannose-6-phosphate isomerase	Oligosaccharide	x
+PF03033	169	Glycosyltransferase family 28 N-terminal domain	Oligosaccharide	x
+PF01501	156	Glycosyl transferase family 8	Oligosaccharide	x
+PF05159	152	Capsule polysaccharide biosynthesis protein	Oligosaccharide	x
+PF04101	95	Glycosyltransferase family 28 C-terminal domain	Oligosaccharide	x
+PF02563	94	Polysaccharide biosynthesis/export protein	Oligosaccharide	x
+PF08437	73	Glycosyl transferase family 8 C-terminal	Oligosaccharide	x
+PF02585	184	GlcNAc-PI de-N-acetylase	Oligosaccharide	x
+PF00155	367	Aminotransferase class I and II	Special	
+PF00202	327	Aminotransferase class-III	Special	
+PF00702	319	haloacid dehalogenase-like hydrolase	Special	
+PF06339	1	Ectoine synthase	Ectoine	x
+PF04183	63	IucA / IucC family	Siderophore	x
+PF10331		Siderophore biosynthesis protein domain	Siderophore	x
+PF03756		A-factor biosynthesis repeat	Butyrolactone	x
+PF00106	6646	short chain dehydrogenase	Redox
+PF01370	3973	NAD dependent epimerase/dehydratase family	Redox
+PF00107	3603	Zinc-binding dehydrogenase	Redox
+PF08240	3422	Alcohol dehydrogenase GroES-like domain	Redox
+PF00441	2756	Acyl-CoA dehydrogenase, C-terminal domain	Redox
+PF02770	2518	Acyl-CoA dehydrogenase, middle domain	Redox
+PF02771	2286	Acyl-CoA dehydrogenase, N-terminal domain	Redox
+PF08028	1860	Acyl-CoA dehydrogenase, C-terminal domain	Redox
+PF01408	1385	Oxidoreductase family, NAD-binding Rossmann fold	Redox
+PF02894	1187	Oxidoreductase family, C-terminal alpha/beta domain	Redox
+PF00984	1014	UDP-glucose/GDP-mannose dehydrogenase family, central domain	Redox
+PF00725	1010	3-hydroxyacyl-CoA dehydrogenase, C-terminal domain	Redox
+PF03720	1009	UDP-glucose/GDP-mannose dehydrogenase family, UDP binding domain	Redox
+PF03721	992	UDP-glucose/GDP-mannose dehydrogenase family, NAD binding domain	Redox
+PF07993	831	Male sterility protein	Redox
+PF02737	771	3-hydroxyacyl-CoA dehydrogenase, NAD binding domain	Redox
+PF00903	570	Glyoxalase/Bleomycin resistance protein/Dioxygenase superfamily	Redox
+PF00037	480	4Fe-4S binding domain	Redox
+PF04055	414	Radical SAM superfamily	Redox
+PF00171	398	Aldehyde dehydrogenase family	Redox
+PF00067	348	Cytochrome P450	Redox
+PF01266	323	FAD dependent oxidoreductase	Redox
+PF01118	321	Semialdehyde dehydrogenase, NAD binding domain	Redox
+PF02668	271	Taurine catabolism dioxygenase TauD, TfdA family	Redox
+PF00248	269	Aldo/keto reductase family	Redox
+PF01494	260	FAD binding domain	Redox
+PF01593	248	Flavin containing amine oxidoreductase	Redox
+PF03992	234	Antibiotic biosynthesis monooxygenase	Redox
+PF00355	206	Rieske [2Fe-2S] domain	Redox
+PF01243	151	Pyridoxamine 5'-phosphate oxidase	Redox
+PF00384	129	Molybdopterin oxidoreductase	Redox
+PF01488	124	Shikimate / quinate 5-dehydrogenase	Redox
+PF00857	128	Isochorismatase family	Redox
+PF04879	136	Molybdopterin oxidoreductase Fe4S4 domain	Redox
+PF08241	3441	Methyltransferase domain	Group_Transfer
+PF08242	3407	Methyltransferase domain	Group_Transfer
+PF00698	1378	Acyl transferase domain	Group_Transfer
+PF00483	1169	Nucleotidyl transferase	Group_Transfer
+PF00561	958	alpha/beta hydrolase fold	Group_Transfer
+PF00583	594	Acetyltransferase (GNAT) family	Group_Transfer
+PF01636	468	Phosphotransferase enzyme family	Group_Transfer
+PF01039	350	Carboxyl transferase domain	Group_Transfer
+PF00288	339	GHMP kinases N terminal domain	Group_Transfer
+PF00289	310	Carbamoyl-phosphate synthase L chain, N-terminal domain	Group_Transfer
+PF02786	310	Carbamoyl-phosphate synthase L chain, ATP binding domain	Group_Transfer
+PF01757	293	Acyltransferase family	Group_Transfer
+PF02785	254	Biotin carboxylase C-terminal domain	Group_Transfer
+PF02409	217	Omt_N	Group_Transfer
+PF01553	180	Acyltransferase	Group_Transfer
+PF02348	172	Cytidylyltransferase	Group_Transfer
+PF00891	168	O-methyltransferase	Group_Transfer
+PF01596	120	O-methyltransferase	Group_Transfer
+PF04820	112	Tryptophan halogenase	Group_Transfer
+PF02522	26	Aminoglycoside 3-N-acetyltransferase	Group_Transfer
+PF08484	74	C-methyltransferase	Group_Transfer
+PF08421	74	Hypothetical methyltransferase	Group_Transfer
+PF01721		Class II bacteriocin	Ribpept	Bacteriocin
+PF02052		Gallidermin	Ribpept	Bacteriocin
+PF02674		Colicin V production protein	Ribpept	Bacteriocin
+PF03515		Cloacin	Ribpept	Bacteriocin
+PF04369		Lactococcin-like family	Ribpept	Bacteriocin
+PF08109		Lactocin 705 family	Ribpept	Bacteriocin
+PF08129		Alpha/beta enterocin family	Ribpept	Bacteriocin
+PF09221		Bacteriocin class IId cyclical uberolysin-like	Ribpept	Bacteriocin
+PF09683		Bacteriocin (Lactococcin_972)	Ribpept	Bacteriocin
+PF10439		Bacteriocin class II with double-glycine leader peptide	Ribpept	Bacteriocin
+PF11420		Bacteriocin subtilosin A	Ribpept	Bacteriocin
+PF11632		Lactococcin G-beta	Ribpept	Bacteriocin
+PF11758		Aureocin-like type II bacteriocin	Ribpept	Bacteriocin
+PF12173		Bacteriocin class IIc cyclic gassericin A-like	Ribpept	Bacteriocin
+PF04738	46	Lantibiotic dehydratase, C terminus	Ribpept	Lantibiotic
+PF04737	53	Lantibiotic dehydratase, N terminus	Ribpept	Lantibiotic
+PF04604		Type-A lantibiotic	Ribpept	Lantibiotic
+PF05147		Lanthionine synthetase C-like protein	Ribpept	Lantibiotic
+PF08109		Lactocin 705 family	Ribpept	Bacteriocin
+PF08129		Alpha/beta enterocin family	Ribpept	Bacteriocin
+PF08130		Type A lantibiotic family	Ribpept	Lantibiotic
