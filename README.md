@@ -68,7 +68,7 @@ source("neigh_pval.R")
 rm(list = ls())
 ```
 
-## Handling colocalization p-values
+### Handling colocalization p-values
 This step takes as input the coloc_pval.Rdata file. First, it creates a simmetric matix of p-values where the (i,j) element is subtituted by the max((i,j),(j,i)) and saves it into coloc_pval_MAX.Rdata and coloc_pval_MAX.csv.
 
 Second, it takes the last matrix and applies the BY correction to the p-values. This is saved in coloc_pval_adj.Rdata and coloc_pval_adj.csv.
