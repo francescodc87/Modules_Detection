@@ -39,12 +39,12 @@ this step starts from the file clustersCOGSnr.csv and creates the clustersCOGSnr
     modifying the cluster's topology, this makes the the p-value evaluation
     extremely simpler and extremely faster
 
-###Example
- - Item 1
- - Item 2
-  - Sub Item 1
-  - Sub Item 2
-
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+   
 ## Built With
 * [R](https://www.r-project.org/)
 * [RStudio](https://www.rstudio.com/)
