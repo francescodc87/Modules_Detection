@@ -10,6 +10,8 @@ Several packages needs to be installed and loaded in order to be able to use the
 * [doParallel](https://cran.r-project.org/web/packages/doParallel/index.html)
 * [Matrix](https://cran.r-project.org/web/packages/Matrix/index.html)
 * [igraph](http://igraph.org/r/)
+* [Rmpfr](https://cran.r-project.org/web/packages/Rmpfr/index.html)
+
 
 ## Getting Started
 Keep in mind that all intermediate files are saved, so it is
@@ -23,6 +25,7 @@ library(foreach)
 library(doParallel)
 library(Matrix)
 library(igraph)
+library(Rmpfr)
 ```
 After, one should navigate to the folder where all the data and the scripts are stored.
 ```
