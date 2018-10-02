@@ -1,5 +1,5 @@
 # Modules Detection
-Here you can find all the R code and data used fo the module detection algorithm
+Here you can find all the R code and data used for the module detection algorithm
 described in "Computational identification of co-evolving multi-gene modules in microbial biosynthetic gene clusters".
 Before starting, it is necessary to download everything contained here.
 
@@ -35,15 +35,15 @@ setwd("/path/to/chosen/folder/")
 This step starts from the file containing all the BGCs annotated according smCOGs (clustersCOGSnr.csv) and creates the clustersCOGSnr_trimmed.csv where:
 1. all clusters with less than 2 different cogs are removed;
 1. if 2 or more clusters have the same smCOG composition, only the shortest is kept;
-1. when the same smCOG is repeated subsequentially more than once in a cluster it is replaced with the empty cell "-" and concatenated at the end of the cluster as c(cluster, "-", "smCOG"). Even if we are losing some neighbouring interactions and slightly modifying the cluster's topology, this makes the the p-value evaluation extremely simpler and extremely faster.
+1. when the same smCOG is repeated subsequently more than once in a cluster it is replaced with the empty cell "-" and concatenated at the end of the cluster. Even if we are losing some neighbouring interactions and slightly modifying the cluster's topology, this makes the p-value evaluation extremely simpler and extremely faster.
 
-To perform this step, one just need to paste the following:
+To perform this step, one just needs to paste the following:
 
 ```
 source("trimming.R")
 rm(list = ls())
 ```
-### Counting colocalization interactions
+### Counting co-localization interactions
 This step takes as input the clustersCOGSnr_trimmed.csv file, counts all the coloc interactions between smCOGs and puts them in a matrix. The results are saved both in coloc_count.Rdata and coloc_count.csv.
 
 ```
@@ -57,8 +57,8 @@ source("counting_neigh.R")
 rm(list = ls())
 ```
 
-### Computing colocalization p-values
-This step takes as input the clustersCOGSnr_trimmed.csv and coloc_count.Rdata files and computes the colocalization p-values in both directions. The computed p-values are saved into coloc_pval.Rdata and coloc_pval.csv.
+### Computing co-localization p-values
+This step takes as input the clustersCOGSnr_trimmed.csv and coloc_count.Rdata files and computes the co-localization p-values in both directions. The computed p-values are saved into coloc_pval.Rdata and coloc_pval.csv.
 ```
 source("coloc_pval.R")
 rm(list = ls())
@@ -71,8 +71,8 @@ source("neigh_pval.R")
 rm(list = ls())
 ```
 
-### Handling colocalization p-values
-This step takes as input the coloc_pval.Rdata file. First, it creates a simmetric matix of p-values where the (i,j) element is subtituted by the max((i,j),(j,i)) and saves it into coloc_pval_MAX.Rdata and coloc_pval_MAX.csv.
+### Handling co-localization p-values
+This step takes as input the coloc_pval.Rdata file. First, it creates a symmetric matrix of p-values where the (i,j) element is substituted by the max((i,j),(j,i)) and saves it into coloc_pval_MAX.Rdata and coloc_pval_MAX.csv.
 
 Second, it takes the last matrix and applies the BY correction to the p-values. This is saved in coloc_pval_adj.Rdata and coloc_pval_adj.csv.
 
@@ -82,7 +82,7 @@ rm(list = ls())
 ```
 
 ### Handling adjacency p-values
-This step takes as input the neigh_pval.Rdata file. First, it creates a simmetric matix of p-values where the (i,j) element is subtituted by the max((i,j),(j,i)) and saves it into neigh_pval_MAX.Rdata and neigh_pval_MAX.csv. Second, it takes the last matrix and applies the BY correction to the p-values. This is saved in neigh_pval_adj.Rdata and neigh_pval_adj.csv.
+This step takes as input the neigh_pval.Rdata file. First, it creates a symmetric matrix of p-values where the (i,j) element is substituted by the max((i,j),(j,i)) and saves it into neigh_pval_MAX.Rdata and neigh_pval_MAX.csv. Second, it takes the last matrix and applies the BY correction to the p-values. This is saved in neigh_pval_adj.Rdata and neigh_pval_adj.csv.
 ```
 source("handling_neigh_pvalues.R")
 rm(list = ls())
@@ -98,7 +98,7 @@ rm(list = ls())
 ```
 
 This step starts takes modules_adj_pvalues.Rdata as input and generates
-the output Modules.Rdata. Starting from an arbitrary threshold (.1), a simmetric binary matrix is built where the (i,j) element is 1 if at least one of the two pvalues (adjacency or colocalization) is lower than threshold. This binary matrix is than used to create a graph. Next, the igraph package is used to find all the maximal cliques (fully connected sub-graphs there are not subsets of other fully connected sub-graphs). These cliques are considered as modules. The procedure just described is repeated considering every possible threshold < .1.
+the output Modules.Rdata. Starting from an arbitrary threshold (.1), a symmetric binary matrix is built where the (i,j) element is 1 if at least one of the two p-values (adjacency or co-localization) is lower than threshold. This binary matrix is than used to create a graph. Next, the igraph package is used to find all the maximal cliques (fully connected sub-graphs there are not subsets of other fully connected sub-graphs). These cliques are considered as modules. The procedure just described is repeated considering every possible threshold < .1.
 
 ```
 source('detect_modules_function.R')
