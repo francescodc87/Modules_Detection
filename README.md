@@ -1,7 +1,7 @@
 # Modules Detection
 Here you can find all the R code and data used for the module detection algorithm
 described in "Computational identification of co-evolving multi-gene modules in microbial biosynthetic gene clusters".
-Before starting, it is necessary to download everything contained here.
+Before starting, it is necessary to download all the files contained here.
 
 ## Prerequisites
 Several packages needs to be installed and loaded in order to be able to use the code here described.
@@ -15,7 +15,7 @@ Several packages needs to be installed and loaded in order to be able to use the
 
 ## Getting Started
 Keep in mind that all intermediate files are saved, so it is
-not necessary to replicate the whole analysis. 
+not necessary to replicate the entire analysis should something go wrong at a later step. 
 
 First it is necessary to load all the necessary packages:
 
@@ -27,17 +27,17 @@ library(Matrix)
 library(igraph)
 library(Rmpfr)
 ```
-After, one should navigate to the folder where all the data and the scripts are stored.
+After this has been done, the user should navigate to the folder where all the data and the scripts are stored.
 ```
 setwd("/path/to/chosen/folder/")
 ```
 ### Trimming
 This step starts from the file containing all the BGCs annotated according smCOGs (clustersCOGSnr.csv) and creates the clustersCOGSnr_trimmed.csv where:
-1. all clusters with less than 2 different cogs are removed;
-1. if 2 or more clusters have the same smCOG composition, only the shortest is kept;
-1. when the same smCOG is repeated subsequently more than once in a cluster it is replaced with the empty cell "-" and concatenated at the end of the cluster. Even if we are losing some neighbouring interactions and slightly modifying the cluster's topology, this makes the p-value evaluation extremely simpler and extremely faster.
+1. all clusters containing less than 2 different cogs are removed;
+1. if 2 or more clusters have the same smCOG composition, only the shortest one is kept;
+1. when the same smCOG is repeated subsequently more than once in a cluster it is replaced with the empty cell "-" and concatenated at the end of the cluster. Even if we are losing some neighbouring interactions and slightly modifying the cluster's topology, this makes the p-value evaluation much simpler and considerably faster.
 
-To perform this step, one just needs to paste the following:
+To perform this step, the user just needs to paste the following:
 
 ```
 source("trimming.R")
@@ -89,7 +89,7 @@ rm(list = ls())
 ```
 
 ### Modules detection
-Before running the module detection script, it is necessary rea
+Before running the module detection script, it is necessary to merge the results just obtained in a single Rdata file:
 ```
 load("coloc_pval_adj.Rdata")
 load("neigh_pval_adj.Rdata")
@@ -98,7 +98,7 @@ rm(list = ls())
 ```
 
 This step starts takes modules_adj_pvalues.Rdata as input and generates
-the output Modules.Rdata. Starting from an arbitrary threshold (.1), a symmetric binary matrix is built where the (i,j) element is 1 if at least one of the two p-values (adjacency or co-localization) is lower than threshold. This binary matrix is than used to create a graph. Next, the igraph package is used to find all the maximal cliques (fully connected sub-graphs there are not subsets of other fully connected sub-graphs). These cliques are considered as modules. The procedure just described is repeated considering every possible threshold < .1.
+the output Modules.Rdata. Starting from an arbitrary threshold (.1), a symmetric binary matrix is built where the (i,j) element is 1 if at least one of the two p-values (adjacency or co-localization) is lower than the threshold. This binary matrix is then used to create a graph. Next, the igraph package is used to find all the maximal cliques (fully connected sub-graphs that are not subsets of other fully connected sub-graphs). These cliques are considered as potential modules. The procedure just described is repeated considering every possible threshold <.1.
 
 ```
 source('detect_modules_function.R')
